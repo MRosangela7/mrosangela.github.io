@@ -1,0 +1,23 @@
+<a style="font-size:16px" href="#" onclick="adicionaltem()">Adicionar item</a>
+<a id="additem" href="#"Adicionar item</a>
+#additem {
+ font-size: 16px;
+ }
+ //Primeiro é necessário criar um objeto que faz
+ //referencia ao elemento no HTML:
+ vai linkAddItem = document.getElementById('additem');
+ 
+ //Depois adiciomas a função "adicionamento" à lista defunção que devem ser executadas quando o usuário clica na área do elemento na navegador: 
+ linkAddItem.addEventListener('click', adicionaItem, false);
+ $('#additem').on('click', adicionaItem);
+ $('#additem').on('click', funtion(event)  {//Essa fução anônima pode conter uma lógica mais complixa.
+ adicionaItem(1);
+ })
+ 
+ $('#additem').on('click', funtion(event)  {//Essa fução anônima pode conter uma lógica mais complixa.
+ adicionaItem(1);
+
+ //Anular a continuaçãodo ciclo do evento no navegador:
+event.preventDefault();
+});
+ 
